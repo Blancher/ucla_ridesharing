@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Comic Neue';
+    list-style: none;
+    transition: .5s;
+}
+
+h1, a, h2, p, li, input, textarea {
+    animation: opaque;
+    animation-iteration-count: 1;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    text-shadow: .1px .1px 1px maroon;
+}
+
+@keyframes opaque {
+    from{opacity: 0};
+    to{opacity: 1};
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(rgb(167, 225, 167), rgb(156, 156, 223));
+    border: 3px inset black;
+    margin: 0;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    z-index: 1;
+}
+
+#home {
+    margin-top: 150px;
+}
+
+#subnav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+    position: relative;
+    right: 8px;
+    background: linear-gradient(rgb(158, 131, 131), rgb(181, 184, 216));
+}
+
+#subnav a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(167, 225, 167);
+    font-style: italic;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#subnav a:hover {
+    padding: 8px;
+    padding-right: 10px;
+    opacity: .5;
+    background-color: maroon;
+}
+
+#subnav a:active {
+    background-color: none;
+    text-decoration: underline;
+}
+
+h1 {
+    color: rgb(156, 156, 223);
+    font-family: 'Gill Sans';
+}
+
+p {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 25px;
+    width: 80%;
+    margin: 20px auto;
+    color: rgb(167, 225, 167);
+}
+
+.divide {
+    border: 3px outset maroon;
+    position: relative;
+    left: 8px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+a {
+    color: rgb(7, 7, 75);
+}
+
+input, textarea {
+    text-align: left;
+}
