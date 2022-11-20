@@ -76,6 +76,8 @@ p {
     font-size: 20px;
     width: 80%;
     margin: 0 auto;
+    animation: enlarge;
+    animation-duration: .5s;
 }
 
 h2 {
@@ -99,4 +101,9 @@ a {
 
 input, textarea {
     text-align: left;
+}
+
+@keyframes enlarge {
+    from{font-size: 10px};
+    to{font-size: 20px};
 }
